@@ -29,7 +29,6 @@ public class ExhibitionGUI extends JFrame {
     public ExhibitionGUI() {
         dbManager = new DatabaseManager();
 
-        // Apply FlatLaf Dark theme with rounded corners and blue accents
         try {
             UIManager.setLookAndFeel(new FlatMacDarkLaf());
             UIManager.put("Component.arc", 18);
@@ -181,8 +180,6 @@ public class ExhibitionGUI extends JFrame {
             }
         }
     }
-
-    // keep your registerParticipant, searchParticipant, updateParticipant, deleteParticipant, clearForm here...
 
 private void registerParticipant() {
     String regId = regIdField.getText().trim();
